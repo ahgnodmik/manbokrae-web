@@ -1,0 +1,11 @@
+# Large local-only blog image backup (site uses Naver CDN hotlinks)
+images/blog/
+
+# Local KakaoTalk photo dumps
+KakaoTalk_Photo_*.jpeg
+
+# Wrangler local state
+.wrangler/
+
+# OS
+.DS_Store
