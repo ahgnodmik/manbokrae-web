@@ -7,5 +7,8 @@ KakaoTalk_Photo_*.jpeg
 # Wrangler local state
 .wrangler/
 
+# Vercel link (local only)
+.vercel/
+
 # OS
 .DS_Store
