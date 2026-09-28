@@ -173,7 +173,7 @@
   }
   a { color: inherit; }
   a:focus-visible { outline: 3px solid var(--brand-red-deep); outline-offset: 3px; }
-  img { display: block; max-width: 100%; }
+  img { display: block; max-width: 100%; height: auto; }
 
   .frame { max-width: 1060px; margin: 0 auto; padding: 0 24px; }
 
@@ -310,6 +310,10 @@
 
   /* ── 오시는 길 ── */
   .visit-grid { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+  .faq-list { max-width: 40em; }
+  .faq-item + .faq-item { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--rule); }
+  .faq-item h3 { font-size: 1.05rem; font-weight: 700; }
+  .faq-item p { margin-top: 8px; font-size: 0.98rem; line-height: 1.7; }
   .visit-block h3 { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
   .visit-block p { font-size: 1.05rem; }
   .visit-block + .visit-block { margin-top: 30px; }
@@ -356,7 +360,7 @@
 <header class="top">
   <div class="frame top-inner">
     <div class="top-brand">
-      <img src="images/logo-small.png" alt="만복래 로고">
+      <img width="100" height="102" src="images/logo-small.webp" alt="만복래 로고">
       <span class="top-name">만복래숯불구이</span>
     </div>
     <a class="top-tel" href="tel:0522627255">052-262-7255</a>
@@ -383,7 +387,7 @@
       </div>
     </div>
     <figure class="hero-photo">
-      <img src="images/storefront.jpg" alt="만복래숯불구이 봉계 본점 건물 외관. '봉계불고기의 원조' 간판." fetchpriority="high">
+      <img width="1200" height="721" src="images/storefront.webp" alt="만복래숯불구이 봉계 본점 건물 외관. '봉계불고기의 원조' 간판." fetchpriority="high">
       <figcaption>봉계 본점</figcaption>
     </figure>
   </section>
@@ -403,7 +407,7 @@
           "제대로 식사할 곳이 없다"고 동네 사람인 할아버지에게 불평하자,
           <span class="year">1983년</span> 봉계시장 근처 초가집 안에 숯불을 피우고
           돼지고기, 소고기에 왕소금을 뿌려 밥을 내는 식당을 차렸습니다.
-          그 이름이 '금성식육점', 지금의 만복래 숯불구이입니다.
+          그 이름이 '금성식육점', 지금의 만복래숯불구이입니다.
         </p>
         <p>
           품질 좋은 소고기, 왕소금, 육회, 된장찌개 — 이 조합의 맛이 기가 막혀
@@ -433,7 +437,7 @@
     <div class="menu-board">
       <h3>만복래</h3>
       <div class="menu-inner">
-        <img class="menu-gif" src="images/grill.gif" alt="숯불 석쇠 위에서 한우를 굽는 모습" loading="lazy">
+        <img width="300" height="300" class="menu-gif" src="images/grill.webp" alt="숯불 석쇠 위에서 한우를 굽는 모습" loading="lazy">
         <div>
           <p class="menu-main">
             한우 왕소금구이
@@ -456,10 +460,10 @@
           매장에서 직접 사 가시거나, 전화로 택배 주문할 수 있습니다.
         </p>
         <div class="shop-grid">
-          <figure><img src="images/beef-sirloin.png" alt="한우 등심" loading="lazy"><figcaption>등심</figcaption></figure>
-          <figure><img src="images/beef-bulgogi.png" alt="한우 불고기감" loading="lazy"><figcaption>불고기</figcaption></figure>
-          <figure><img src="images/beef-cube.png" alt="한우 양지 국거리" loading="lazy"><figcaption>양지 국거리</figcaption></figure>
-          <figure><img src="images/broth.gif" alt="사골 국물이 끓는 모습" loading="lazy"><figcaption>사골</figcaption></figure>
+          <figure><img width="799" height="799" src="images/beef-sirloin.webp" alt="한우 등심" loading="lazy"><figcaption>등심</figcaption></figure>
+          <figure><img width="799" height="799" src="images/beef-bulgogi.webp" alt="한우 불고기감" loading="lazy"><figcaption>불고기</figcaption></figure>
+          <figure><img width="700" height="700" src="images/beef-cube.webp" alt="한우 양지 국거리" loading="lazy"><figcaption>양지 국거리</figcaption></figure>
+          <figure><img width="500" height="500" src="images/broth.webp" alt="사골 국물이 끓는 모습" loading="lazy"><figcaption>사골</figcaption></figure>
         </div>
         <p class="shop-cta">
           <a class="btn btn-red" href="tel:0522627255">전화로 택배 주문</a>
@@ -471,7 +475,7 @@
   <section class="frame" aria-labelledby="gallery-h">
     <h2 id="gallery-h">만복래 풍경</h2>
     <div class="gallery-grid">
-      <figure><img src="images/table-setting.jpg" alt="만복래 풍경 사진" loading="lazy"></figure>
+      <figure><img width="1200" height="900" src="images/table-setting.webp" alt="만복래 풍경 사진" loading="lazy"></figure>
       <figure><img src="https://mblogthumb-phinf.pstatic.net/MjAyMjExMDdfMjMy/MDAxNjY3ODE5NTEyMzcw.z1KTFNANcgGBBJUdD2N0pgGG2bWLJnBaSZr229L0iY4g.oleYrZgRrxPP699vXevutxAyIGdWmSVs-I1fjNnC1hgg.JPEG.misun7255/SE-917f16bd-bfcd-4269-9d56-2f53ac4ea471.jpg?type=w800" alt="만복래 풍경 사진" loading="lazy"></figure>
       <figure><img src="https://mblogthumb-phinf.pstatic.net/MjAyMzA1MDFfNzIg/MDAxNjgyOTM5MDQxMDE3.dLGZVsdtvhEbJ5bo75EhFXzi4uhR1_ymPsrBPbytBnQg.qYv6DVAOA7J_msl8C62VgLjU_w9_JrP0E2niVnJUGcEg.JPEG.misun7255/20230429%EF%BC%BF131835.jpg?type=w800" alt="만복래 풍경 사진" loading="lazy"></figure>
       <figure><img src="https://mblogthumb-phinf.pstatic.net/MjAyMzA3MDlfOTYg/MDAxNjg4OTA3NjIyOTIw.5cdAjc7QZXUw2hY5mEFpw9l0an-5NVNMBp9EIAUACL0g.uWGP-TYE__RT7tWet1VPr3U4VEN1Qr0aXBAk7-EnC6wg.JPEG.misun7255/20230709%EF%BC%BF132706.jpg?type=w800" alt="만복래 풍경 사진" loading="lazy"></figure>
@@ -491,19 +495,75 @@
   <section class="frame" aria-labelledby="video-h">
     <h2 id="video-h">옛 방송 속 만복래</h2>
     <div class="tv-grid">
-      <figure><img src="images/tv-grill.png" alt="방송 화면: 숯불 위에서 익는 한우 생고기" loading="lazy"><figcaption>“한국의 생고기구이” — 방송 캡처</figcaption></figure>
-      <figure><img src="images/tv-bonggye.png" alt="방송 화면: 언양·봉계 한우특구 소개" loading="lazy"><figcaption>언양·봉계 한우특구 소개</figcaption></figure>
-      <figure><img src="images/tv-road.png" alt="방송 화면: 2000년대 초 봉계로 향하는 길" loading="lazy"><figcaption>2000년대 초, 봉계 가는 길</figcaption></figure>
+      <figure><img width="1200" height="647" src="images/tv-grill.webp" alt="방송 화면: 숯불 위에서 익는 한우 생고기" loading="lazy"><figcaption>“한국의 생고기구이” — 방송 캡처</figcaption></figure>
+      <figure><img width="1200" height="645" src="images/tv-bonggye.webp" alt="방송 화면: 언양·봉계 한우특구 소개" loading="lazy"><figcaption>언양·봉계 한우특구 소개</figcaption></figure>
+      <figure><img width="1200" height="671" src="images/tv-road.webp" alt="방송 화면: 2000년대 초 봉계로 향하는 길" loading="lazy"><figcaption>2000년대 초, 봉계 가는 길</figcaption></figure>
     </div>
     <div class="video-grid">
       <figure>
-        <iframe src="https://www.youtube-nocookie.com/embed/OFCgLE2CgNc" title="울산 만복래 숯불구이 6시내고향 출연" loading="lazy" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/OFCgLE2CgNc" title="울산 만복래숯불구이 6시내고향 출연" loading="lazy" allowfullscreen></iframe>
         <figcaption>KBS 6시 내고향 출연 영상</figcaption>
       </figure>
       <figure>
-        <iframe src="https://www.youtube-nocookie.com/embed/EdrLI8tEW1M" title="울산 만복래 숯불구이 내외부 전경" loading="lazy" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/EdrLI8tEW1M" title="울산 만복래숯불구이 내외부 전경" loading="lazy" allowfullscreen></iframe>
         <figcaption>만복래 내·외부 전경</figcaption>
       </figure>
+    </div>
+  </section>
+
+  <section class="frame" aria-labelledby="faq-h">
+    <div class="two-col">
+      <h2 id="faq-h">자주 묻는 질문</h2>
+      <div class="faq-list">
+        <div class="faq-item">
+          <h3>봉계 불고기단지의 원조 식당은 어디인가요?</h3>
+          <p>만복래숯불구이입니다. 1983년 봉계 집성촌 토박이 김하두 할아버지가 봉계시장 근처 초가집에서 '금성식육점'(현 만복래숯불구이)을 열었고, 이것이 봉계 불고기단지의 시작입니다. 봉계는 2006년 재정경제부 지정 전국 유일의 봉계불고기단지특구입니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래숯불구이의 대표 메뉴는 무엇인가요?</h3>
+          <p>한우 왕소금구이입니다. 한우 암소를 굵은 소금으로 간해 숯불에 굽는 1983년 그대로의 방식입니다. 양념불고기, 육회, 된장찌개도 그때와 같은 메뉴입니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래숯불구이는 어디에 있나요?</h3>
+          <p>울산광역시 울주군 두동면 두동로 1789(봉계리), 봉계 한우불고기특구 안에 있습니다. 경주에서 35번 국도를 타고 오면 됩니다. 전화 052-262-7255.</p>
+        </div>
+        <div class="faq-item">
+          <h3>한우를 택배로 주문할 수 있나요?</h3>
+          <p>네. 만복래식육점에서 산지 한우를 부위별로 준비하며, 전화(052-262-7255)로 택배 주문할 수 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>왕소금구이란 어떤 방식인가요?</h3>
+          <p>양념 없이 굵은 왕소금만으로 간을 해서 숯불에 굽는 한우 구이 방식입니다. 고기 본연의 맛을 살리는 봉계 불고기단지의 전통 방식으로, 만복래숯불구이가 1983년부터 이 방식을 이어오고 있습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>봉계불고기와 언양불고기의 차이는 무엇인가요?</h3>
+          <p>둘 다 울산 울주군의 한우 구이 지역 브랜드입니다. 언양불고기는 언양읍 일대, 봉계불고기는 두동면 봉계리 일대를 중심으로 합니다. 봉계는 왕소금구이와 양념불고기로 유명하며, 2006년 재정경제부로부터 특구로 지정되었습니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>봉계 한우불고기특구는 언제 지정되었나요?</h3>
+          <p>2006년 9월 재정경제부 고시 제2006-33호로 지정되었습니다. 봉계·언양 지역 주민들이 함께 일군 성과로, 전국에서 손꼽히는 한우 구이 특구입니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래는 왜 봉계 불고기의 원조로 불리나요?</h3>
+          <p>봉계에 식당이 없던 1983년, 김하두 할아버지가 봉계시장 근처 초가집에서 '금성식육점'(현 만복래숯불구이)을 열어 숯불 왕소금구이를 처음 선보였고, 이후 그 맛이 입소문을 타면서 봉계에 식당들이 모여 지금의 불고기단지가 형성되었기 때문입니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래숯불구이의 역사와 창업주는 누구인가요?</h3>
+          <p>창업주는 봉계 집성촌 토박이 김하두 할아버지입니다. 두동 활천리로 수석 채집을 다니던 사람들이 식사할 곳이 없다고 불평하자 1983년 식당을 열었고, 품질 좋은 소고기·왕소금·육회·된장찌개 조합으로 유명해졌습니다. 지금은 2대를 넘어 3대째 손님들이 찾아옵니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>경주 근처에서 한우 숯불구이를 먹을 수 있는 곳은 어디인가요?</h3>
+          <p>경주에서 35번 국도를 따라 내려오면 울산 울주군 봉계 한우불고기특구가 있습니다. 그 초입의 만복래숯불구이는 1983년부터 이어온 봉계 불고기단지의 원조 식당입니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래숯불구이의 쌈채소는 어디서 오나요?</h3>
+          <p>밭에서 직접 길러 냅니다. 깻잎, 상추 등 계절 쌈채소를 직접 재배해 상에 올립니다.</p>
+        </div>
+        <div class="faq-item">
+          <h3>만복래숯불구이가 나온 방송이 있나요?</h3>
+          <p>KBS 6시 내고향, 한국인의 밥상 등 여러 방송에 소개되었습니다. 옛 방송 영상과 자료는 만복래 네이버 블로그(blog.naver.com/misun7255)에서 볼 수 있습니다.</p>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -549,7 +609,7 @@
       </div>
     </div>
     <a class="map-embed" href="https://map.naver.com/p/search/만복래숯불구이" target="_blank" rel="noopener" aria-label="네이버 지도에서 만복래숯불구이 위치 보기">
-      <img src="images/naver-map.png" alt="네이버 지도에 표시된 만복래숯불구이 위치 — 울산 울주군 두동면 봉계리" loading="lazy" width="1826" height="1570">
+      <img width="1200" height="1032" src="images/naver-map.webp" alt="네이버 지도에 표시된 만복래숯불구이 위치 — 울산 울주군 두동면 봉계리" loading="lazy">
     </a>
   </section>
 </main>
