@@ -310,10 +310,21 @@
 
   /* ── 오시는 길 ── */
   .visit-grid { margin-top: 40px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
-  .faq-list { max-width: 40em; }
-  .faq-item + .faq-item { margin-top: 26px; padding-top: 26px; border-top: 1px solid var(--rule); }
-  .faq-item h3 { font-size: 1.05rem; font-weight: 700; }
-  .faq-item p { margin-top: 8px; font-size: 0.98rem; line-height: 1.7; }
+  .faq-list { max-width: 40em; border-top: 1px solid var(--rule); }
+  .faq-item { border-bottom: 1px solid var(--rule); }
+  .faq-item summary {
+    list-style: none; cursor: pointer; position: relative;
+    padding: 18px 36px 18px 0; font-size: 1.05rem; font-weight: 700;
+  }
+  .faq-item summary::-webkit-details-marker { display: none; }
+  .faq-item summary::after {
+    content: "+"; position: absolute; right: 4px; top: 50%; transform: translateY(-50%);
+    font-size: 1.4rem; font-weight: 400; color: var(--muted); transition: transform 0.2s;
+  }
+  .faq-item[open] summary::after { transform: translateY(-50%) rotate(45deg); color: var(--brand-red-deep); }
+  .faq-item summary:hover { color: var(--brand-red-deep); }
+  .faq-item summary:focus-visible { outline: 2px solid var(--brand-red-deep); outline-offset: 2px; }
+  .faq-item p { padding: 0 0 20px; font-size: 0.98rem; line-height: 1.7; }
   .visit-block h3 { font-size: 0.9rem; font-weight: 700; color: var(--muted); margin-bottom: 8px; }
   .visit-block p { font-size: 1.05rem; }
   .visit-block + .visit-block { margin-top: 30px; }
@@ -514,54 +525,54 @@
     <div class="two-col">
       <h2 id="faq-h">자주 묻는 질문</h2>
       <div class="faq-list">
-        <div class="faq-item">
-          <h3>봉계 불고기단지의 원조 식당은 어디인가요?</h3>
+        <details class="faq-item">
+          <summary>봉계 불고기단지의 원조 식당은 어디인가요?</summary>
           <p>만복래숯불구이입니다. 1983년 봉계 집성촌 토박이 김하두 할아버지가 봉계시장 근처 초가집에서 '금성식육점'(현 만복래숯불구이)을 열었고, 이것이 봉계 불고기단지의 시작입니다. 봉계는 2006년 재정경제부 지정 전국 유일의 봉계불고기단지특구입니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래숯불구이의 대표 메뉴는 무엇인가요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래숯불구이의 대표 메뉴는 무엇인가요?</summary>
           <p>한우 왕소금구이입니다. 한우 암소를 굵은 소금으로 간해 숯불에 굽는 1983년 그대로의 방식입니다. 양념불고기, 육회, 된장찌개도 그때와 같은 메뉴입니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래숯불구이는 어디에 있나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래숯불구이는 어디에 있나요?</summary>
           <p>울산광역시 울주군 두동면 두동로 1789(봉계리), 봉계 한우불고기특구 안에 있습니다. 경주에서 35번 국도를 타고 오면 됩니다. 전화 052-262-7255.</p>
-        </div>
-        <div class="faq-item">
-          <h3>한우를 택배로 주문할 수 있나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>한우를 택배로 주문할 수 있나요?</summary>
           <p>만복래식육점 한우 구매와 택배는 전화(052-262-7255)로 문의해 주세요.</p>
-        </div>
-        <div class="faq-item">
-          <h3>왕소금구이란 어떤 방식인가요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>왕소금구이란 어떤 방식인가요?</summary>
           <p>양념 없이 굵은 왕소금만으로 간을 해서 숯불에 굽는 한우 구이 방식입니다. 고기 본연의 맛을 살리는 봉계 불고기단지의 전통 방식으로, 만복래숯불구이가 1983년부터 이 방식을 이어오고 있습니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>봉계불고기와 언양불고기의 차이는 무엇인가요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>봉계불고기와 언양불고기의 차이는 무엇인가요?</summary>
           <p>둘 다 울산 울주군의 한우 구이 지역 브랜드입니다. 언양불고기는 언양읍 일대, 봉계불고기는 두동면 봉계리 일대를 중심으로 합니다. 봉계는 왕소금구이와 양념불고기로 유명하며, 2006년 재정경제부로부터 특구로 지정되었습니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>봉계 한우불고기특구는 언제 지정되었나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>봉계 한우불고기특구는 언제 지정되었나요?</summary>
           <p><strong>2006년 9월 재정경제부 고시 제2006-33호</strong>로 지정되었습니다. 봉계·언양 지역 주민들이 함께 일군 성과로, 전국에서 손꼽히는 한우 불고기 특구입니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래는 왜 봉계 불고기의 원조로 불리나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래는 왜 봉계 불고기의 원조로 불리나요?</summary>
           <p>봉계에 식당이 없던 1983년, 김하두 할아버지가 봉계시장 근처 초가집에서 '금성식육점'(현 만복래숯불구이)을 열어 숯불 왕소금구이를 처음 선보였고, 이후 그 맛이 입소문을 타면서 봉계에 식당들이 모여 지금의 불고기단지가 형성되었기 때문입니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래숯불구이의 역사와 창업주는 누구인가요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래숯불구이의 역사와 창업주는 누구인가요?</summary>
           <p>창업주는 봉계 집성촌 토박이 김하두 할아버지입니다. 두동 활천리로 수석 채집을 다니던 사람들이 식사할 곳이 없다고 불평하자 1983년 식당을 열었고, 품질 좋은 소고기·왕소금·육회·된장찌개 조합으로 유명해졌습니다. 지금은 2대를 넘어 3대째 손님들이 찾아옵니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>경주 근처에서 한우 숯불구이를 먹을 수 있는 곳은 어디인가요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>경주 근처에서 한우 숯불구이를 먹을 수 있는 곳은 어디인가요?</summary>
           <p>경주에서 35번 국도를 따라 내려오면 울산 울주군 봉계 한우불고기특구가 있습니다. 그 초입의 만복래숯불구이는 1983년부터 이어온 봉계 불고기단지의 원조 식당입니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래숯불구이의 쌈채소는 어디서 오나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래숯불구이의 쌈채소는 어디서 오나요?</summary>
           <p>쌈채소는 직접 길러 드리는 것을 선호합니다.</p>
-        </div>
-        <div class="faq-item">
-          <h3>만복래숯불구이가 나온 방송이 있나요?</h3>
+        </details>
+        <details class="faq-item">
+          <summary>만복래숯불구이가 나온 방송이 있나요?</summary>
           <p>KBS 6시 내고향, 한국인의 밥상 등 여러 방송에 소개되었습니다. 옛 방송 영상과 자료는 만복래 네이버 블로그(blog.naver.com/misun7255)에서 볼 수 있습니다.</p>
-        </div>
+        </details>
       </div>
     </div>
   </section>
